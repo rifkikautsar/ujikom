@@ -84,7 +84,8 @@ if($db->connect_errno==0){
                     <div class="card shadow mb-4">
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0"
+                                    style="text-align: center">
                                     <thead>
                                         <tr>
                                             <th>ID Buku</th>

@@ -85,12 +85,13 @@ if($db->connect_errno==0){
                 <div class="card shadow mb-4">
                     <div class="card-body">
                         <div class="table-responsive">
-                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0"
+                                style="text-align: center">
                                 <thead>
                                     <tr>
                                         <th>ID Kategori</th>
                                         <th>Nama Kategori</th>
-                                        <th>Aksi</th>
+                                        <th colspan=2>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -103,6 +104,9 @@ if($db->connect_errno==0){
                                             <td><button type="button" class="btn btn-primary btn-circle edit-data"
                                                     id="<?=$row['id_kategori'];?>" name="edit"><i
                                                         class="fas fa-edit"></i></button></td>
+                                            <td><button type="button" class="btn btn-danger btn-circle hapus-data"
+                                                    name="hapus" id="<?=$row['id_kategori'];?>"><i
+                                                        class="fas fa-trash"></i></button>
                                         </tr>
                                         <?php endforeach;?>
                                     </form>
@@ -181,7 +185,7 @@ $(".edit-data").on("click", function() {
 $(".hapus-data").on("click", function() {
     var id_kategori = $(this).attr("id");
     Swal.fire({
-        title: 'Apakah anda ingin menghapus data penerbit?',
+        title: 'Apakah anda ingin menghapus data kategori?',
         icon: 'warning',
         allowOutsideClick: false,
         showCancelButton: true,
