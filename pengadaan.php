@@ -85,7 +85,7 @@ if($db->connect_errno==0){
                                 </thead>
                                 <tbody>
                                     <form action="" method="post">
-                                        <?php $data = getDataPengadaan();?>
+                                        <?php $data = getDataPengadaan(); var_dump($data);?>
                                         <?php foreach($data as $row):?>
                                         <tr>
                                             <input type="hidden" class="form-control form-control-sm" name="id_buku"
@@ -179,6 +179,7 @@ if($db->connect_errno==0){
             </div>
         </div>
     </div>
+</div>
 </div>
 <!-- /.container-fluid -->
 <?php } ?>

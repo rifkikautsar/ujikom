@@ -6,7 +6,7 @@ if($db->connect_errno==0){
 <div class="container-fluid">
 
     <!-- Page Heading -->
-    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <div class="align-items-center justify-content-between mb-4">
         <center>
             <h1 class="h3 mb-0 text-gray-800">Data Buku</h1>
         </center>
@@ -194,6 +194,7 @@ if($db->connect_errno==0){
             </div>
         </div>
     </div>
+</div>
 </div>
 <!-- /.container-fluid -->
 <?php } ?>

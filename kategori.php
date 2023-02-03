@@ -156,6 +156,7 @@ if($db->connect_errno==0){
         </div>
     </div>
 </div>
+</div>
 <!-- /.container-fluid -->
 <?php } ?>
 <script>
