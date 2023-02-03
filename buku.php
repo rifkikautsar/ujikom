@@ -107,8 +107,6 @@ if($db->connect_errno==0){
                                         <?php $data = getDataBuku();?>
                                         <?php foreach($data as $row):?>
                                         <tr>
-                                            <input type="hidden" class="form-control form-control-sm" name="id_buku"
-                                                id="id_buku" autocomplete="off" value="<?= $row['id_buku'];?>" required>
                                             <td><?= $row['id_buku'];?> </td>
                                             <td><?= $row['nama_kategori'];?></td>
                                             <td><?= $row['nama_buku'];?></td>
