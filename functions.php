@@ -1,5 +1,6 @@
 <?php
-define("DEVELOPMENT",TRUE);
+// error_reporting(0);
+define("DEVELOPMENT",FALSE);
 function dbConnect(){
     global $db;
 	$db=new mysqli("localhost","root","artemis47","unibookstore");
