@@ -99,6 +99,6 @@ if($db->connect_errno==0){
         </form>
     </div>
 </div>
-
+</div>
 <?php } ?>
 <!-- /.container-fluid -->
