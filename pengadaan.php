@@ -85,7 +85,7 @@ if($db->connect_errno==0){
                                 </thead>
                                 <tbody>
                                     <form action="" method="post">
-                                        <?php $data = getDataPengadaan(); var_dump($data);?>
+                                        <?php $data = getDataPengadaan();?>
                                         <?php foreach($data as $row):?>
                                         <tr>
                                             <input type="hidden" class="form-control form-control-sm" name="id_buku"
